@@ -421,6 +421,23 @@ describe("Zotero.HTTP", function () {
 					}
 				}
 			);
+			httpd.registerPathHandler(
+				'/download/auth',
+				{
+					handle: function (request, response) {
+						let val;
+						try {
+							val = request.getHeader("Authorization");
+						}
+						catch (e) {
+							val = "";
+						}
+						response.setStatusLine(null, 200, "OK");
+						response.setHeader("X-Echo-Auth", val, false);
+						response.write("ok");
+					}
+				}
+			);
 		});
 
 		beforeEach(async function () {
@@ -550,6 +567,19 @@ describe("Zotero.HTTP", function () {
 			assert.equal(req.status, 200);
 			let stat = await IOUtils.stat(dest);
 			assert.equal(stat.size, 3 * 1024);
+		});
+
+		it("should decode percent-encoded credentials from URL for Basic auth", async function () {
+			let username = "user@example.com";
+			let password = "secret";
+			let expected = "Basic " + btoa(username + ":" + password);
+			let url = `http://${encodeURIComponent(username)}:${password}`
+				+ `@127.0.0.1:${port}/download/auth`;
+			let dest = PathUtils.join(tmpDir, "auth.bin");
+			let nsUri = Services.io.newURI(url);
+			let req = await Zotero.HTTP.download(nsUri, dest);
+			assert.equal(req.status, 200);
+			assert.equal(req.headers.get("X-Echo-Auth"), expected);
 		});
 	});
 

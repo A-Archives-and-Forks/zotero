@@ -15,8 +15,8 @@ Zotero.HTTP = new function () {
 	 * Parse a URI (nsIURI or string), extract any embedded credentials, and
 	 * return the URL as a credential-free string
 	 *
-	 * Mozilla percent-encodes periods in the username component of nsIURIs (%2E), which is
-	 * technically valid but breaks Basic auth against most servers, so we undo that here.
+	 * nsIURI returns the username and password percent-encoded, so we decode them so
+	 * callers can use them directly (e.g., when building a Basic auth header).
 	 *
 	 * @param {nsIURI|String} uri
 	 * @return {{ url: String, username: String|null, password: String|null }}
@@ -30,11 +30,9 @@ Zotero.HTTP = new function () {
 				return { url: uri, username: null, password: null };
 			}
 		}
-		let username = uri.username || null;
-		let password = null;
+		let username = uri.username ? decodeURIComponent(uri.username) : null;
+		let password = uri.password ? decodeURIComponent(uri.password) : null;
 		if (username) {
-			username = username.replace(/%2E/, '.');
-			password = uri.password || null;
 			uri = uri.mutate().setUserPass('').finalize();
 		}
 		return { url: uri.spec, username, password };
