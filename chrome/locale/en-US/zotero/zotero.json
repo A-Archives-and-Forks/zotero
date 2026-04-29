@@ -1172,6 +1172,9 @@
 	"plugins-blocked-plugin.message": {
 		"string": "This plugin has been disabled by { app-name }."
 	},
+	"data-dir-unsupported-storage": {
+		"string": "This can happen if the { app-name } data directory is in a cloud storage folder (OneDrive, Dropbox, etc.) or on a network share."
+	},
 	"preferences-window.title": {
 		"string": "{ app-name } Settings"
 	},
@@ -1322,11 +1325,29 @@
 	"preferences-advanced-default-data-dir.aria-label": {
 		"string": "Default location"
 	},
+	"preferences-pane-account": {
+		"string": "Account"
+	},
 	"-preferences-sync-data-syncing": {
 		"string": "Data Syncing"
 	},
 	"preferences-sync-data-syncing-description": {
 		"string": "Log in with your { app-name } account to sync your data between devices, collaborate with others, and more."
+	},
+	"preferences-sync-settings-heading": {
+		"string": "Sync"
+	},
+	"preferences-sync-settings-intro": {
+		"string": "{ app-name } can sync your library data and files across devices. <label data-l10n-name=\"sync-link\">Learn more</label>"
+	},
+	"preferences-sync-reset-heading": {
+		"string": "Sync Reset"
+	},
+	"preferences-sync-fileSyncing-groups.label": {
+		"string": "Sync attachment files in group libraries using { app-name } Storage"
+	},
+	"preferences-sync-fileSyncing-tos": {
+		"string": "By using { app-name } Storage, you agree to become bound by its <label data-l10n-name=\"terms-link\">terms and conditions</label>."
 	},
 	"preferences-account-log-out.label": {
 		"string": "Log Out…"
@@ -1886,7 +1907,7 @@
 	"reader-read-aloud-error-unknown": {
 		"string": "An unknown error occurred."
 	},
-	"reader-read-aloud-error-connection": {
+	"reader-read-aloud-error-network": {
 		"string": "Unable to connect to the Read Aloud service. Please check your internet connection."
 	},
 	"reader-read-aloud-error-daily-limit-exceeded": {
