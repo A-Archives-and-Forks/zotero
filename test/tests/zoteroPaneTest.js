@@ -16,6 +16,29 @@ describe("ZoteroPane", function () {
 	});
 	
 	describe("#_setHighlightedRowsCallback()", function () {
+		it("should highlight containing collection of selected item on Ctrl/Option", async function () {
+			var collection = await createDataObject('collection');
+			var item = await createDataObject('item', { collections: [collection.id] });
+			
+			await selectLibrary(win);
+			await zp.itemsView.selectItem(item.id);
+			
+			var itemTree = doc.getElementById("item-tree-main");
+			itemTree.focus();
+			assert.equal(doc.activeElement.id, "item-tree-main");
+			
+			var key = Zotero.isMac ? "Alt" : "Control";
+			itemTree.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true }));
+			
+			// The handler sets a 225ms timer before applying highlights
+			await waitForCallback(() => doc.querySelectorAll('.highlighted').length > 0, 50, 5);
+			
+			var rows = doc.querySelectorAll('.highlighted');
+			assert.lengthOf(rows, 1);
+			
+			await zp.collectionsView.setHighlightedRows();
+		});
+		
 		it("should highlight parent collection of collection in trash", async function () {
 			var collection1 = await createDataObject('collection');
 			var collection2 = await createDataObject('collection', { parentID: collection1.id, deleted: true });
