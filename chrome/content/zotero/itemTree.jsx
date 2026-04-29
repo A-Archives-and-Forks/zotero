@@ -2395,7 +2395,15 @@ var ItemTree = class ItemTree extends LibraryTree {
 		try {
 			let columnPrefs = await Zotero.File.getContentsAsync(COLUMN_PREFS_FILEPATH);
 			let persistSettings = JSON.parse(columnPrefs);
-			this._columnPrefs = persistSettings[this.id] || {};
+			// Fall back to the pre-item-tree-refactor "<id>-default" key,
+			// including when "<id>" is an empty object written out by an
+			// earlier post-refactor beta before this fallback was added.
+			// _writeColumnPrefsToFile() removes it on the next write.
+			let prefs = persistSettings[this.id];
+			if (!prefs || !Object.keys(prefs).length) {
+				prefs = persistSettings[this.id + '-default'];
+			}
+			this._columnPrefs = prefs || {};
 		}
 		catch (e) {
 			this._columnPrefs = {};
@@ -2419,6 +2427,7 @@ var ItemTree = class ItemTree extends LibraryTree {
 				persistSettings = {};
 			}
 			persistSettings[this.id] = this._columnPrefs;
+			delete persistSettings[this.id + '-default'];
 
 			let prefString = JSON.stringify(persistSettings);
 			Zotero.debug(`Writing column prefs of length ${prefString.length} to file ${COLUMN_PREFS_FILEPATH}`);
