@@ -1313,6 +1313,9 @@
 	"preferences-advanced-enable-bidi-ui.label": {
 		"string": "Enable bidirectional text editing utilities"
 	},
+	"preferences-advanced-data-dir.value": {
+		"string": "Data Directory:"
+	},
 	"preferences-advanced-reset-data-dir.label": {
 		"string": "Revert to Default Location…"
 	},
