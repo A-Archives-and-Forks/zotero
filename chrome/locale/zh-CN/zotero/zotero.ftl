@@ -773,3 +773,4 @@ banner-close-button =
     .aria-label = 关闭通知
 plugins-blocked-plugin =
     .message = 此插件已被 { -app-name } 禁用。
+data-dir-unsupported-storage = This can happen if the { -app-name } data directory is in a cloud storage folder (OneDrive, Dropbox, etc.) or on a network share.

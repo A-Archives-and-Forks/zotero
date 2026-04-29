@@ -57,13 +57,11 @@
 <!ENTITY zotero.preferences.sync.fileSyncing "Sinkronisasi Berkas">
 <!ENTITY zotero.preferences.sync.fileSyncing.url "URL:">
 <!ENTITY zotero.preferences.sync.fileSyncing.myLibrary "Sinkronisasikan berkas-berkas lampiran di dalam Perpustakaanku menggunakan">
-<!ENTITY zotero.preferences.sync.fileSyncing.groups "SInkronisasikan berkas-berkas lampiran di dalam perpustakaan Zotero menggunaan penyimpanan Zotero">
+
 <!ENTITY zotero.preferences.sync.fileSyncing.download "Unduh file">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.atSyncTime "pada waktu sinkronisasi">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.onDemand "sebagaimana dibutuhkan">
 <!ENTITY zotero.preferences.sync.fileSyncing.verifyServer "Verifikasi Server">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos1 "Dengan menggunakan penyimpanan Zotero, Anda sepakat untuk terikat dengan ">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos2 "syarat dan ketentuan di dalamnya">
 <!ENTITY zotero.preferences.sync.librariesToSync "Perpustakaan untuk Disinkronkan">
 <!ENTITY zotero.preferences.sync.librariesToSync.button "Pilih perpustakaan...">
 <!ENTITY zotero.preferences.sync.librariesToSync.sync "Sinkronisasi">

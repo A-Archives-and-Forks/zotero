@@ -1,100 +1,107 @@
 preferences-window =
-    .title = { -app-name } Settings
-preferences-appearance-title = Appearance and Language
+    .title = { -app-name } Настройки
+preferences-appearance-title = Внешний вид и Язык
 preferences-auto-recognize-files =
-    .label = Automatically retrieve metadata for PDFs and ebooks
-preferences-file-renaming-title = File Renaming
-preferences-file-renaming-intro = { -app-name } can automatically rename files based on the details of the parent item (title, author, etc.) and keep the filenames in sync as you make changes. Downloaded files are always initially named based on the parent item.
+    .label = Автоматически получать метаданные PDF и электронных книг
+preferences-file-renaming-title = Переименование файла
+preferences-file-renaming-intro = { -app-name } может автоматически переименовывать файлы на основе деталей родительского элемента (заголовок, автор и т.д.) и синхронизировать имена файлов при внесении изменений. Загруженные файлы всегда изначально называются на основе родительского элемента.
 preferences-file-renaming-configure-button =
-    .label = Configure File Renaming…
+    .label = Настройте переименование файла...
 preferences-attachment-titles-title = Названия вложений
 preferences-attachment-titles-intro = Названия вложений <label data-l10n-name="wiki-link">отличаются от имён файлов</label>. Для поддержания некоторых рабочих процессов, { -app-name } может показывать имена файлов, вместо названий вложений в списке записей.
 preferences-attachment-titles-show-filenames =
     .label = Показывать имена вложенных файлов в списке записей
-preferences-reader-title = Reader
-preferences-reader-open-epubs-using = Open EPUBs using
-preferences-reader-open-snapshots-using = Open snapshots using
+preferences-reader-title = Чтец
+preferences-reader-open-epubs-using = Открывать EPUB в
+preferences-reader-open-snapshots-using = Открывать снапшоты в
 preferences-reader-open-in-new-window =
-    .label = Open files in new windows instead of tabs
+    .label = Открывать файлы в новых окнах вместо вкладок
 preferences-reader-auto-disable-tool =
-    .label = Turn off note, text, and image annotation tools after each use
+    .label = Отключать инструменты для аннотирования заметок, текста и изображений после каждого использования
 preferences-reader-ebook-font = Шрифт эл. книги:
 preferences-reader-ebook-hyphenate =
-    .label = Enable automatic hyphenation
+    .label = Включить авто-расстановку переносов
 preferences-note-title = Заметки
 preferences-note-open-in-new-window =
-    .label = Open notes in new windows instead of tabs
+    .label = Открывать заметки в новых окнах вместо вкладок
 preferences-color-scheme = Цветовая схема:
 preferences-color-scheme-auto =
-    .label = Выбирать автоматически
+    .label = Автовыбор
 preferences-color-scheme-light =
     .label = Светлая
 preferences-color-scheme-dark =
-    .label = Темная
-preferences-item-pane-header = Item Pane Header:
-preferences-item-pane-header-style = Header Citation Style:
-preferences-item-pane-header-locale = Header Language:
-preferences-item-pane-header-missing-style = Missing style: <{ $shortName }>
-preferences-locate-library-lookup-intro = Library Lookup can find a resource online using your library’s OpenURL resolver.
-preferences-locate-resolver = Сервер:
-preferences-locate-base-url = Base URL:
+    .label = Тёмная
+preferences-item-pane-header = Заголовок панели элементов:
+preferences-item-pane-header-style = Стиль цитирования заголовка:
+preferences-item-pane-header-locale = Язык заголовка:
+preferences-item-pane-header-missing-style = Отсутствующий стиль <{ $shortName }>
+preferences-locate-library-lookup-intro = Обзор Библиотек позволяет найти ресурс в Интернете, используя OpenURL резолвер вашей библиотеки.
+preferences-locate-resolver = Резолвер:
+preferences-locate-base-url = Базовый URL:
 preferences-quickCopy-minus =
     .aria-label = { general-remove }
     .label = { $label }
 preferences-quickCopy-plus =
     .aria-label = { general-add }
     .label = { $label }
-preferences-styleManager-intro = { -app-name } can generate citations and bibliographies in over 10,000 citation styles. Add styles here to make them available when selecting styles throughout { -app-name }.
+preferences-styleManager-intro = { -app-name } может генерировать цитаты и библиографии в более чем 10 000 стилях цитирования. Добавьте сюда стили, чтобы они были доступны при выборе стилей в { -app-name }.
 preferences-styleManager-get-additional-styles =
-    .label = Get Additional Styles…
+    .label = Получить дополнительные стили…
 preferences-styleManager-restore-default =
-    .label = Restore Default Styles…
+    .label = Восстановить умолчальные стили…
 preferences-styleManager-add-from-file =
     .tooltiptext = Добавить стиль из файла
-    .label = Add from File…
-preferences-styleManager-remove = Press { delete-or-backspace } to remove this style.
-preferences-citation-dialog = Citation Dialog
-preferences-citation-dialog-mode = Citation Dialog Mode:
+    .label = Добавить из файла…
+preferences-styleManager-remove = Нажмите { delete-or-backspace }, чтобы удалить этот стиль.
+preferences-citation-dialog = Диалог цитирования
+preferences-citation-dialog-mode = Режим диалога цитирования:
 preferences-citation-dialog-mode-last-used =
-    .label = Last Used
+    .label = Последнее использованное
 preferences-citation-dialog-mode-list =
-    .label = List Mode
+    .label = Режим списка
 preferences-citation-dialog-mode-library =
-    .label = Library Mode
+    .label = Режим библиотеки
 preferences-advanced-enable-local-api =
-    .label = Allow other applications on this computer to communicate with { -app-name }
-preferences-advanced-local-api-available = Available at <code data-l10n-name="url">{ $url }</span>
-preferences-advanced-server-disabled = The { -app-name } HTTP server is disabled.
+    .label = Разрешить другим приложениям на этом компьютере взаимодействовать с { -app-name }
+preferences-advanced-local-api-available = Доступно в <code data-l10n-name="url">{ $url }</span>
+preferences-advanced-server-disabled = { -app-name } HTTP сервер отключен.
 preferences-advanced-server-enable-and-restart =
-    .label = Enable and Restart
-preferences-advanced-language-and-region-title = Язык и регион
+    .label = Включить и Перезапустить
+preferences-advanced-language-and-region-title = Язык и Регион
 preferences-advanced-enable-bidi-ui =
-    .label = Enable bidirectional text editing utilities
+    .label = Включить утилиты редактирования двунаправленного текста
 preferences-advanced-reset-data-dir =
-    .label = Revert to Default Location…
+    .label = Вернуться к умолчальному расположению…
 preferences-advanced-custom-data-dir =
-    .label = Use Custom Location…
+    .label = Исп-ть своё расположение…
 preferences-advanced-default-data-dir =
     .value = (Default: { $directory })
-    .aria-label = Default location
+    .aria-label = Умолчальное расположение
+preferences-pane-account = Account
 -preferences-sync-data-syncing = Синхронизация данных
 preferences-sync-data-syncing-groupbox =
     .aria-label = { -preferences-sync-data-syncing }
 preferences-sync-data-syncing-heading = { -preferences-sync-data-syncing }
-preferences-sync-data-syncing-description = Log in with your { -app-name } account to sync your data between devices, collaborate with others, and more.
+preferences-sync-data-syncing-description = Войдите в аккаунт { -app-name }, чтобы синхронизировать данные между устройствами, сотрудничать с другими и многого другого.
+preferences-sync-settings-heading = Sync
+preferences-sync-settings-intro = { -app-name } can sync your library data and files across devices. <label data-l10n-name="sync-link">Learn more</label>
+preferences-sync-reset-heading = Sync Reset
+preferences-sync-fileSyncing-groups =
+    .label = Sync attachment files in group libraries using { -app-name } Storage
+preferences-sync-fileSyncing-tos = By using { -app-name } Storage, you agree to become bound by its <label data-l10n-name="terms-link">terms and conditions</label>.
 preferences-account-log-out =
-    .label = Log Out…
-preferences-sync-reset-restore-to-server-body = { -app-name } will replace “{ $libraryName }” on { $domain } with data from this computer.
+    .label = Выйти...
+preferences-sync-reset-restore-to-server-body = { -app-name } будет заменено “{ $libraryName }” в { $domain } данными с этого компьютера.
 preferences-sync-reset-restore-to-server-deleted-items-text =
     { $remoteItemsDeletedCount } { $remoteItemsDeletedCount ->
         [one] item
        *[other] items
-    } in the online library will be permanently deleted.
+    } в онлайновой библиотеке будут удалены.
 preferences-sync-reset-restore-to-server-remaining-items-text =
     { general-sentence-separator }{ $localItemsCount ->
-        [0] The library on this computer and the online library will be empty.
-        [one] 1 item will remain on this computer and in the online library.
-       *[other] { $localItemsCount } items will remain on this computer and in the online library.
+        [0] Библиотека на этом компьютере и онлайн-библиотека будут пусты.
+        [one] 1 элемент останется на этом компьютере и в онлайн-библиотеке.
+       *[other] { $localItemsCount } элементы останутся на этом компьютере и в онлайн-библиотеке.
     }
 preferences-sync-reset-restore-to-server-checkbox-label =
     { $remoteItemsDeletedCount ->
@@ -103,20 +110,20 @@ preferences-sync-reset-restore-to-server-checkbox-label =
         [many] Удалить { $remoteItemsDeletedCount } записей
        *[other] Удалить { $remoteItemsDeletedCount } записей
     }
-preferences-sync-reset-restore-to-server-confirmation-text = delete online library
-preferences-sync-reset-restore-to-server-yes = Перезаписать данные в сетевой библиотеке
+preferences-sync-reset-restore-to-server-confirmation-text = удалить онлайновую библиотеку
+preferences-sync-reset-restore-to-server-yes = Перезаписать данные в онлайновой библиотеке
 preferences-account-log-in =
-    .label = Log In
+    .label = Войти
 preferences-account-waiting-for-login =
-    .value = Waiting for login…
+    .value = Жду входа...
 preferences-account-cancel-button =
     .label = { general-cancel }
 preferences-account-logged-out-status =
-    .value = (logged out)
+    .value = (вышел)
 preferences-account-email-label =
     .value = Email:
 preferences-account-switch-accounts =
-    .label = Switch Accounts…
-preferences-account-switch-text = Switching to a different account will remove all { -app-name } data on this computer. Before continuing, make sure all data and files you wish to keep have been synced with the “{ $username }” account or you have a backup of your { -app-name } data directory.
-preferences-account-switch-confirmation-text = remove local data
-preferences-account-switch-accept = Remove Data and Restart
+    .label = Сменить аккаунт...
+preferences-account-switch-text = Переход на другой аккаунт удалит все данные { -app-name } на этом компьютере. Перед тем как продолжить, убедитесь, что все данные и файлы, которые вы хотите сохранить, синхронизированы с аккаунтом "{ $username }" или у вас есть резервная копия каталога данных { -app-name }.
+preferences-account-switch-confirmation-text = Удаление локальных данных
+preferences-account-switch-accept = Удалите данные и перезапустите

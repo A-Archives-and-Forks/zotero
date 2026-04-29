@@ -1,6 +1,6 @@
 file-renaming-settings-window =
     .title = Configure File Renaming
-file-renaming-settings-library-label = Library:
+file-renaming-settings-library-label = Biblioteca:
 file-renaming-auto-rename-files =
     .label = Renomear arquivos automaticamente
 file-renaming-file-types = Renomear ficheiros destes tipos:

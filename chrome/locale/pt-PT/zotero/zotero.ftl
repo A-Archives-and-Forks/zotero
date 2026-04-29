@@ -158,11 +158,11 @@ zotero-toolbar-tabs-scroll-backwards =
     .title = Retroceder
 toolbar-add-attachment =
     .tooltiptext = { add-attachment }
-recently-read = Recently Read
+recently-read = Lido recentemente
 collections-menu-show-recently-read =
-    .label = Show { recently-read }
+    .label = Mostrar { recently-read }
 item-menu-remove-from-recently-read =
-    .label = Remove from { recently-read }…
+    .label = Remover dos { recently-read }…
 collections-menu-rename-collection =
     .label = Renomear coleção
 collections-menu-edit-saved-search =
@@ -290,8 +290,8 @@ items-table-cell-notes =
             [many] { $count } notas
            *[other] { $count } notas
         }
-items-column-added-by = Added By
-items-column-modified-by = Modified By
+items-column-added-by = Adicionado por
+items-column-modified-by = Modificado por
 items-column-last-read = Last Read
 report-error =
     .label = Reportar Erro...
@@ -801,3 +801,4 @@ banner-close-button =
     .aria-label = Dispensar notificação
 plugins-blocked-plugin =
     .message = This plugin has been disabled by { -app-name }.
+data-dir-unsupported-storage = This can happen if the { -app-name } data directory is in a cloud storage folder (OneDrive, Dropbox, etc.) or on a network share.

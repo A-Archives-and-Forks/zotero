@@ -1,6 +1,6 @@
 file-renaming-settings-window =
-    .title = Configure File Renaming
-file-renaming-settings-library-label = Library:
+    .title = Dateiumbenennung konfigurieren
+file-renaming-settings-library-label = Bibliothek:
 file-renaming-auto-rename-files =
     .label = Dateien automatisch umbenennen
 file-renaming-file-types = Diese Dateitypen umbenennen:
@@ -20,7 +20,7 @@ file-renaming-rename-linked =
     .label = Verlinkte Dateien umbenennen
 file-renaming-format-title = Dateinamen-Format
 file-renaming-format-instructions = Sie können das Muster anpassen, das { -app-name } verwendet, um Dateien nach den Metadaten des Elterneintrags umzubenennen.
-file-renaming-format-instructions-example = For example, "{ $example }" in this template will be replaced with the title of the parent item, truncated at 50 characters.
+file-renaming-format-instructions-example = Zum Beispiel wird "{ $example }" in dieser Vorlage durch den Titel des übergeordneten Eintrags mit einer maximalen Länge von 50 Zeichen ersetzt.
 file-renaming-format-instructions-more = Lesen Sie die <label data-l10n-name="file-renaming-format-help-link">Hilfe</label> für mehr Informationen.
 file-renaming-format-template = Dateinamen-Vorlage:
 file-renaming-format-preview = Vorschau:

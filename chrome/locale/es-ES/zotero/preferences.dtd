@@ -57,13 +57,11 @@
 <!ENTITY zotero.preferences.sync.fileSyncing "Sincronización de archivos">
 <!ENTITY zotero.preferences.sync.fileSyncing.url "URL:">
 <!ENTITY zotero.preferences.sync.fileSyncing.myLibrary "Sincronizar los archivos adjuntos en Mi biblioteca usando">
-<!ENTITY zotero.preferences.sync.fileSyncing.groups "Sincronizar archivos adjuntos en bibliotecas de grupo usando el almacenamiento de Zotero">
+
 <!ENTITY zotero.preferences.sync.fileSyncing.download "Descargar archivos">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.atSyncTime "en el momento de sincronizar">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.onDemand "según sea necesario">
 <!ENTITY zotero.preferences.sync.fileSyncing.verifyServer "Verificar servidor">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos1 "Al utilizar el almacenamiento de Zotero, acepta estar obligado por sus">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos2 "términos y condiciones">
 <!ENTITY zotero.preferences.sync.librariesToSync "Bibliotecas a sincronizar">
 <!ENTITY zotero.preferences.sync.librariesToSync.button "Escoger bibliotecas...">
 <!ENTITY zotero.preferences.sync.librariesToSync.sync "Sincronizar">

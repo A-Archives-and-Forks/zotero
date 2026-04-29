@@ -57,13 +57,11 @@
 <!ENTITY zotero.preferences.sync.fileSyncing "Sinkro ar restroù">
 <!ENTITY zotero.preferences.sync.fileSyncing.url "URL:">
 <!ENTITY zotero.preferences.sync.fileSyncing.myLibrary "Sinkro ar restroù stagadenn e-barzh Ma Levraoueg en ur implijout">
-<!ENTITY zotero.preferences.sync.fileSyncing.groups "Sinkro ar restroù stagadenn e-barzh al levraouegoù strollad en ur implijout stokadur Zotero">
+
 <!ENTITY zotero.preferences.sync.fileSyncing.download "Pellgargañ ar restroù">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.atSyncTime "da vare ar sinkro">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.onDemand "pa vez ezhomm">
 <!ENTITY zotero.preferences.sync.fileSyncing.verifyServer "Gwiriañ ar servijer">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos1 "En ur implijout stokadur Zotero, ec'h asantit bezañ liammet gant e">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos2 "termoù ha koñdisionoù">
 <!ENTITY zotero.preferences.sync.librariesToSync "Levraouegoù da sinkroaat">
 <!ENTITY zotero.preferences.sync.librariesToSync.button "Dibab al levraouegoù...">
 <!ENTITY zotero.preferences.sync.librariesToSync.sync "Sinkro">

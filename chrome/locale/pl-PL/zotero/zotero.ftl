@@ -810,3 +810,4 @@ banner-close-button =
     .aria-label = Odrzuć powiadomienie
 plugins-blocked-plugin =
     .message = Ta wtyczka została wyłączona przez { -app-name }.
+data-dir-unsupported-storage = This can happen if the { -app-name } data directory is in a cloud storage folder (OneDrive, Dropbox, etc.) or on a network share.

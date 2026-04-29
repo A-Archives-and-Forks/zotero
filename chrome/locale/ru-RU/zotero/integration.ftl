@@ -9,12 +9,12 @@ integration-editBibliography-add-button =
 integration-editBibliography-remove-button =
     .aria-label = { general-remove }
 integration-editBibliography-editor =
-    .aria-label = Edit reference
--integration-editBibliography-include-uncited = To include an uncited item in your bibliography, select it from the items list and press { general-add }.
--integration-editBibliography-exclude-cited = You can also exclude a cited item by selecting it from the list of references and pressing { general-remove }.
--integration-editBibliography-edit-reference = To change how a reference is formatted, use the text editor.
+    .aria-label = Изменить отсылку
+-integration-editBibliography-include-uncited = Чтобы включить нецитируемый элемент в свою библиографию, выберите его из списка элементов и нажмите { general-add }.
+-integration-editBibliography-exclude-cited = Вы можете исключить цитируемый элемент, выбрав его из списка литературы и нажав { general-remove }.
+-integration-editBibliography-edit-reference = Чтобы изменить формат отсылки, используйте текстовый редактор.
 integration-editBibliography-wrapper =
-    .aria-label = Диалог редактирования библиографии
+    .aria-label = Диалог Редактирования Библиографии
     .aria-description =
         { -integration-editBibliography-include-uncited }
         { -integration-editBibliography-exclude-cited }
@@ -22,7 +22,7 @@ integration-editBibliography-wrapper =
 integration-citationDialog = Диалог цитирования
 integration-citationDialog-section-open = Открыть документы ({ $count })
 integration-citationDialog-section-selected = Выбрано ({ $count }/{ $total }) записей
-integration-citationDialog-section-selectedAnnotations = Selected Annotations
+integration-citationDialog-section-selectedAnnotations = Выбранные аннотации
 integration-citationDialog-section-selectedItems = Выбрать записи
 integration-citationDialog-section-cited =
     { $count ->
@@ -32,7 +32,7 @@ integration-citationDialog-section-cited =
 integration-citationDialog-details-suffix = Суффикс
 integration-citationDialog-details-prefix = Префикс
 integration-citationDialog-details-suppressAuthor = Не выводить автора
-integration-citationDialog-details-includeComments = Include Comments
+integration-citationDialog-details-includeComments = Добавить комментарии
 integration-citationDialog-details-remove = { general-remove }
 integration-citationDialog-details-done =
     .label = { general-done }
@@ -40,20 +40,19 @@ integration-citationDialog-details-showInLibrary = { general-show-in-library }
 integration-citationDialog-settings-title = Настройки цитирования
 integration-citationDialog-lib-message-citation =
     { $search ->
-        [true] No selected, open, or cited items match the current search
-       *[other] No selected or open items
+        [true] Ни один выбранный, открытый или цитируемый элемент не соответствует текущему поиску.
+       *[other] Нет выбранных или открытых элементов
     }
 integration-citationDialog-lib-message-add-note =
     { $search ->
-        [true] No selected notes match the current search
-       *[other] No notes are selected
+        [true] Ни одна выбранная заметка не соответствует текущему поиску.
+       *[other] Заметки не выбраны
     }
 integration-citationDialog-lib-message-annotations =
     { $search ->
-        [true] No items with annotations match the current search
-       *[other] No selected or open items with annotations
+       *[true] Нет элементов с аннотациями, которые совпадают с текущим поиском
     }
-integration-citationDialog-settings-keepSorted = Keep sources sorted
+integration-citationDialog-settings-keepSorted = Удерживать источники отсортированными
 integration-citationDialog-btn-settings =
     .title = { general-open-settings }
 integration-citationDialog-mode-library = Библиотека
@@ -63,16 +62,16 @@ integration-citationDialog-btn-type-citation =
 integration-citationDialog-btn-type-add-note =
     .title = Добавить заметку
 integration-citationDialog-btn-type-annotations =
-    .title = Add Annotations
+    .title = Добавить аннотации
 integration-citationDialog-btn-accept =
     .title = { general-accept }
 integration-citationDialog-btn-cancel =
     .title = { general-cancel }
-integration-citationDialog-general-instructions = Use Left/Right-Arrow to navigate the items of this citation. Press Tab to select items to add to this citation.
-integration-citationDialog-enter-to-add-item = Press { return-or-enter } to add this item to the citation.
-integration-citationDialog-search-for-items = Search for items to add to the citation
+integration-citationDialog-general-instructions = Используйте стрелки влево/вправо для навигации по пунктам этой цитаты. Нажмите Tab, чтобы выбрать элементы для добавления к этой цитате.
+integration-citationDialog-enter-to-add-item = Нажмите { return-or-enter }, чтобы добавить этот элемент в цитату.
+integration-citationDialog-search-for-items = Найти элементы, которые можно добавить в цитату
 integration-citationDialog-aria-bubble =
-    .aria-description = This item is included in the citation. Press space bar to customize the item. { integration-citationDialog-general-instructions }
+    .aria-description = Этот элемент включён в цитату. Нажмите Пробел, чтобы настроить элемент. { integration-citationDialog-general-instructions }
 integration-citationDialog-single-input-citation =
     .placeholder = { integration-citationDialog-search-for-items }
     .aria-description = Нажмите Tab для выбора записей, которые будут добавлены к цитированию. Нажмите Escape, чтобы отменить изменения и закрыть диалог.
@@ -82,56 +81,56 @@ integration-citationDialog-input-citation =
 integration-citationDialog-single-input-add-note =
     .placeholder = Найти заметку для вставки в документ
 integration-citationDialog-single-input-annotations =
-    .placeholder = Search for annotations to insert into the document
+    .placeholder = Искать аннотации для вставки в документ
 integration-citationDialog-aria-item-list =
     .aria-description = Используйте клавиши стрелок вверх/вниз для изменения выбора записей. { integration-citationDialog-enter-to-add-item }
 integration-citationDialog-aria-item-library =
     .aria-description = Используйте клавиши стрелок вправо/влево для изменения выбора записей. { integration-citationDialog-enter-to-add-item }
 integration-citationDialog-collections-table =
-    .aria-label = Collections.
+    .aria-label = Коллекции.
     .aria-description = Выберите коллекцию и нажмите Tab для навигации по её записям.
 integration-citationDialog-items-table =
     .aria-label = { integration-citationDialog-enter-to-add-item }
 integration-citationDialog-items-table-added =
-    .aria-label = This item has been added to the citation. Press { return-or-enter } to add it again or { delete-or-backspace } to remove it.
+    .aria-label = Этот элемент был добавлен в цитату. Нажмите { return-or-enter }, чтобы добавить его снова, или { delete-or-backspace }, чтобы удалить его.
 integration-citationDialog-add-all = Добавить все
 integration-citationDialog-collapse-section =
-    .title = Collapse section
-integration-citationDialog-bubble-empty = (no title)
-integration-citationDialog-add-to-citation = Add to Citation
+    .title = Свернуть секцию
+integration-citationDialog-bubble-empty = (нет названия)
+integration-citationDialog-add-to-citation = Добавить в Цитату
 integration-citationDialog-annotations-filter =
-    .placeholder = Filter annotations
-integration-citationDialog-annotations-empty = Select an item, attachment, or annotation to view annotation details
-integration-prefs-displayAs-label = Отобразить цитаты как:
+    .placeholder = Фильтровать аннотации
+integration-citationDialog-annotations-empty = Выберите запись, вложение или аннотацию, чтобы просмотреть детали аннотации
+integration-prefs-displayAs-label = Отобразить Цитаты как:
 integration-prefs-footnotes =
     .label = Сноски
 integration-prefs-endnotes =
     .label = Концевые сноски
 integration-prefs-bookmarks =
-    .label = Хранить цитирования как закладки
-integration-prefs-bookmarks-description = Механизм закладок будет работать и в Word, и в LibreOffice, но может вызывать внезапные ошибки, также он не позволяет использовать ссылки в сносках.
+    .label = Хранить Цитаты как закладки
+integration-prefs-bookmarks-description = Закладки могут использоваться совместно Word и LibreOffice, но при случайном изменении могут вызвать ошибки и не могут быть вставлены в концевые сноски.
 integration-prefs-bookmarks-formatNotice =
     { $show ->
         [true] Документ должен быть сохранён как .doc или .docx.
        *[other] { "" }
     }
 integration-prefs-automaticCitationUpdates =
-    .label = Автоматически обновлять ссылки и библиографии
-    .tooltip = Ссылки, ожидающие обновления, будут выделены в документе
-integration-prefs-automaticCitationUpdates-description = Отключение обновления библиографии может ускорить вставку цитирования в большие документы. Нажимайте «Обновить», чтобы обновить цитирование вручную.
+    .label = Авто-обновлять Цитаты
+    .tooltip = Цитаты, ожидающие обновления, будут выделены в документе
+integration-prefs-automaticCitationUpdates-description = Отключите обновление библиографии, это ускорит вставку цитат в большие документы. Нажимайте «Обновить», чтобы обновить цитаты вручную.
 integration-prefs-automaticJournalAbbeviations =
-    .label = Использовать сокращённые названия журналов MEDLINE
+    .label = Исп-ть MEDLINE аббревиатуры
 integration-prefs-automaticJournalAbbeviations-description = Поле «Сокращ. журнала» будет проигнорировано.
 integration-prefs-exportDocument =
-    .label = Переключиться на другой текстовый редактор…
+    .label = Переключиться на другой Текстовый Процессор…
 integration-error-unable-to-find-winword = { -app-name } не может обнаружить запущенный процесс Word.
-integration-warning-citation-changes-will-be-lost = Вы внесли изменения в цитирование, которые будут потеряны, если вы продолжите.
+integration-warning-citation-changes-will-be-lost = Вы внесли изменения в цитату, которые будут потеряны, если вы продолжите.
 integration-warning-bibliography-changes-will-be-lost = Вы внесли изменения в библиографию, которые будут потеряны, если вы продолжите.
 integration-warning-documentPreferences-changes-will-be-lost = Вы внесли изменения в настройки документа, которые будут потеряны, если вы продолжите.
 integration-warning-discard-changes = Отменить изменения
-integration-warning-command-is-running = A word processor integration command is already running.
+integration-warning-command-is-running = Команда интеграции Текстового Процессора уже запущена.
 first-run-guidance-citationDialog =
-    Введите название, автора и/или год для поиска референса.
+    Введите название, автора и/или год для поиска отсылки.
     
     Чтобы выбрать запись, нажмите на неё или выберите с помощью клавиатуры и нажмите ↓/Space, чтобы показать опции цитирования, такие как номер страницы, префикс и суффикс.
     

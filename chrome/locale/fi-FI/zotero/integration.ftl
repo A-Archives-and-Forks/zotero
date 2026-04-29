@@ -22,7 +22,7 @@ integration-editBibliography-wrapper =
 integration-citationDialog = Viittausikkuna
 integration-citationDialog-section-open = Avoimia asiakirjoja: ({ $count })
 integration-citationDialog-section-selected = Valittuja nimikkeitä ({ $count }/{ $total })
-integration-citationDialog-section-selectedAnnotations = Selected Annotations
+integration-citationDialog-section-selectedAnnotations = Valitut huomautukset
 integration-citationDialog-section-selectedItems = Valitut nimikkeet
 integration-citationDialog-section-cited =
     { $count ->
@@ -32,7 +32,7 @@ integration-citationDialog-section-cited =
 integration-citationDialog-details-suffix = Jälkiliite
 integration-citationDialog-details-prefix = Etuliite
 integration-citationDialog-details-suppressAuthor = Piilota tekijä
-integration-citationDialog-details-includeComments = Include Comments
+integration-citationDialog-details-includeComments = Sisällytä kommentit
 integration-citationDialog-details-remove = { general-remove }
 integration-citationDialog-details-done =
     .label = { general-done }
@@ -50,8 +50,8 @@ integration-citationDialog-lib-message-add-note =
     }
 integration-citationDialog-lib-message-annotations =
     { $search ->
-        [true] No items with annotations match the current search
-       *[other] No selected or open items with annotations
+        [true] Yhtään huomautuksia sisältäviä nimikkeitä ei täsmää hakuehtoon
+       *[other] Ei valittuja eikä avoimia nimikkeitä joissa on huomautuksia
     }
 integration-citationDialog-settings-keepSorted = Pidä lähteet lajiteltuna
 integration-citationDialog-btn-settings =
@@ -63,7 +63,7 @@ integration-citationDialog-btn-type-citation =
 integration-citationDialog-btn-type-add-note =
     .title = Lisää muistiinpano
 integration-citationDialog-btn-type-annotations =
-    .title = Add Annotations
+    .title = Lisää huomautuksia
 integration-citationDialog-btn-accept =
     .title = { general-accept }
 integration-citationDialog-btn-cancel =
@@ -82,7 +82,7 @@ integration-citationDialog-input-citation =
 integration-citationDialog-single-input-add-note =
     .placeholder = Etsi muistiinpanoa lisättäväksi tähän asiakirjaan
 integration-citationDialog-single-input-annotations =
-    .placeholder = Search for annotations to insert into the document
+    .placeholder = Valitse huomautukset jotka lisätään asiakirjaan
 integration-citationDialog-aria-item-list =
     .aria-description = Muuta nimikkeen valintaa ylä- ja alanuolinäppäimellä. { integration-citationDialog-enter-to-add-item }
 integration-citationDialog-aria-item-library =
@@ -100,8 +100,8 @@ integration-citationDialog-collapse-section =
 integration-citationDialog-bubble-empty = (ei otsikkoa)
 integration-citationDialog-add-to-citation = Lisää viittaukseen
 integration-citationDialog-annotations-filter =
-    .placeholder = Filter annotations
-integration-citationDialog-annotations-empty = Select an item, attachment, or annotation to view annotation details
+    .placeholder = Suodata huomautuksia
+integration-citationDialog-annotations-empty = Valitse nimike, liite tai huomautus nähdäksesi huomautuksen lisätiedot
 integration-prefs-displayAs-label = Näytä sitaatit muodossa:
 integration-prefs-footnotes =
     .label = Alaviitteet
@@ -131,8 +131,8 @@ integration-warning-documentPreferences-changes-will-be-lost = Asiakirjan ominai
 integration-warning-discard-changes = Hylkää muutokset
 integration-warning-command-is-running = Tekstinkäsittelyohjelman integrointikomento on jo käynnissä.
 first-run-guidance-citationDialog =
-    Type a title, author, and/or year to search for a reference.
+    Hae lähdettä kirjoittamalla otsikko, tekijä tai vuosi.
     
-    After you’ve made your selection, click the bubble or select it via the keyboard and press ↓/Space to show citation options such as page number, prefix, and suffix.
+    Kun olet tehnyt valintasi, klikkaa kuplaa tai valitse se näppäimistöllä ja paina ↓ tai välilyönti niin näet viittausvaihtoehdot kuten sivunumeron ja etu- tai jälkiliitteet.
     
-    You can also add a page number or other locator by including it with your search terms (e.g., “history { $locator }”) or by typing it after the bubble and pressing { return-or-enter }.
+    Voit myös lisätä sivunumeron tai toisen paikannuskriteerin lisäämällä sen hakutermeihin (esimerkiksi “historia { $locator }”) tai kirjoittamalla sen kuplan jälkeen ja painamalla { return-or-enter }.

@@ -57,13 +57,11 @@
 <!ENTITY zotero.preferences.sync.fileSyncing "ឯកសារកំពុងធ្វើសមកាលកម្ម">
 <!ENTITY zotero.preferences.sync.fileSyncing.url "គេហទំព័រ:">
 <!ENTITY zotero.preferences.sync.fileSyncing.myLibrary "ធ្វើសមកាលកម្មឯកសារកម្ជាប់ក្នុងស្វ័យបណ្ណាល័យ">
-<!ENTITY zotero.preferences.sync.fileSyncing.groups "ធ្វើសមកាលកម្មមឯកសារភ្ជាប់នៅក្នុងបណ្ណាល័យក្រុមដោយប្រើបន្ទុកហ្ស៊ូតេរ៉ូ">
+
 <!ENTITY zotero.preferences.sync.fileSyncing.download "ទាញយកឯកសារ">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.atSyncTime "នៅដំណាក់កាលសមកាលកម្មណាមួយ">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.onDemand "តាមការចាំបាច់">
 <!ENTITY zotero.preferences.sync.fileSyncing.verifyServer "Verify Server">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos1 "តាមរយៈការប្រើបន្ទុកហ្ស៊ូតេរ៉ូ អ្នកត្រូវគោរពទៅតាម">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos2 "លក្ខខណ្ឌ​ និង ខសន្យា។">
 <!ENTITY zotero.preferences.sync.librariesToSync "Libraries to Sync">
 <!ENTITY zotero.preferences.sync.librariesToSync.button "Choose Libraries…">
 <!ENTITY zotero.preferences.sync.librariesToSync.sync "សមកាលកម្ម">

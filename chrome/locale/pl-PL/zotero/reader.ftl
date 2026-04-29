@@ -212,7 +212,7 @@ reader-read-aloud-pause = Pauza
 reader-read-aloud-speed = Szybkość czytania
 reader-read-aloud-voice = Głos
 reader-read-aloud-voice-tier = Tryb głosu
-reader-read-aloud-voice-tier-local = Local
+reader-read-aloud-voice-tier-local = Lokalny
 reader-read-aloud-voice-tier-standard = Norma
 reader-read-aloud-voice-tier-premium = Premium
 reader-read-aloud-more-voices = Więcej głosów...
@@ -229,7 +229,7 @@ reader-read-aloud-quota-exceeded-message =
     }.
 reader-read-aloud-error = { general-error }
 reader-read-aloud-error-unknown = Wystąpił nieznany błąd.
-reader-read-aloud-error-connection = Nie można się połączyć z usługą Read Aloud. Sprawdź swoje połączenie internetowe.
+reader-read-aloud-error-network = Unable to connect to the Read Aloud service. Please check your internet connection.
 reader-read-aloud-error-daily-limit-exceeded = Osiągnięto twój dzienny limit dla głosów { -app-name }.
 reader-read-aloud-retry = Ponów
 reader-read-aloud-first-run-title = Wybierz swój preferowany głos Read Aloud:
@@ -247,7 +247,7 @@ reader-read-aloud-first-run-voice-tier-standard-bullet-unlimited-with-subscripti
 reader-read-aloud-first-run-voice-tier-premium-bullet-highest-quality = Głosy o najwyższej jakości
 reader-read-aloud-first-run-voice-tier-premium-bullet-online-only = Dostępne tylko z połączeniem internetowym
 reader-read-aloud-first-run-voice-tier-premium-bullet-account-required = Wymaga konta { -app-name }
-reader-read-aloud-first-run-voice-tier-premium-bullet-broad-languages = Broad language selection
+reader-read-aloud-first-run-voice-tier-premium-bullet-broad-languages = Szeroki wybór języka
 reader-read-aloud-first-run-voice-tier-premium-bullet-multilingual = Wsparcie wielu języków
 reader-read-aloud-first-run-voice-tier-premium-bullet-external-processing = Source text is processed by external text-to-speech providers
 reader-read-aloud-first-run-voice-tier-premium-bullet-subscription-minutes = { -subscription-name } plans include monthly Premium Voice minutes

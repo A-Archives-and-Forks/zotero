@@ -223,7 +223,7 @@ reader-read-aloud-quota-exceeded-message =
     }.
 reader-read-aloud-error = { general-error }
 reader-read-aloud-error-unknown = En ukjent feil har oppstått.
-reader-read-aloud-error-connection = Kan ikke koble til høytlesingstjenesten. Sjekk internettforbindelsen din.
+reader-read-aloud-error-network = Unable to connect to the Read Aloud service. Please check your internet connection.
 reader-read-aloud-error-daily-limit-exceeded = Du har overskredet den daglige grensen din for stemmer i { -app-name }.
 reader-read-aloud-retry = Prøv på nytt
 reader-read-aloud-first-run-title = Velg den foretrukne høytlesningsstemmen din:

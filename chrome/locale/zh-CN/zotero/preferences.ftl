@@ -77,11 +77,18 @@ preferences-advanced-custom-data-dir =
 preferences-advanced-default-data-dir =
     .value = (默认： { $directory })
     .aria-label = 默认位置
+preferences-pane-account = Account
 -preferences-sync-data-syncing = 数据同步
 preferences-sync-data-syncing-groupbox =
     .aria-label = { -preferences-sync-data-syncing }
 preferences-sync-data-syncing-heading = { -preferences-sync-data-syncing }
 preferences-sync-data-syncing-description = 登录你的 { -app-name } 账户以跨设备同步你的数据、与他人协作等。
+preferences-sync-settings-heading = Sync
+preferences-sync-settings-intro = { -app-name } can sync your library data and files across devices. <label data-l10n-name="sync-link">Learn more</label>
+preferences-sync-reset-heading = Sync Reset
+preferences-sync-fileSyncing-groups =
+    .label = Sync attachment files in group libraries using { -app-name } Storage
+preferences-sync-fileSyncing-tos = By using { -app-name } Storage, you agree to become bound by its <label data-l10n-name="terms-link">terms and conditions</label>.
 preferences-account-log-out =
     .label = 退出登录…
 preferences-sync-reset-restore-to-server-body = { -app-name } 将用此计算机中的数据替换 { $domain } 中 “{ $libraryName }” 中的数据。

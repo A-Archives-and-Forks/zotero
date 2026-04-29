@@ -57,13 +57,11 @@
 <!ENTITY zotero.preferences.sync.fileSyncing "Fájlok szinkronizálása">
 <!ENTITY zotero.preferences.sync.fileSyncing.url "URL:">
 <!ENTITY zotero.preferences.sync.fileSyncing.myLibrary "A könyvtáramban található fájlok szinkronizálása">
-<!ENTITY zotero.preferences.sync.fileSyncing.groups "A csoport könyvtárához tartozó fájlok szinkronizálása a Zotero tárhely használatával">
+
 <!ENTITY zotero.preferences.sync.fileSyncing.download "Fájlok letöltése">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.atSyncTime "szinkronizáláskor">
 <!ENTITY zotero.preferences.sync.fileSyncing.download.onDemand "szükség szerint">
 <!ENTITY zotero.preferences.sync.fileSyncing.verifyServer "Szerver ellenőrzése">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos1 "A Zotero tárhely használata esetén elfogadom a">
-<!ENTITY zotero.preferences.sync.fileSyncing.tos2 "felhasználási feltételeket">
 <!ENTITY zotero.preferences.sync.librariesToSync "Könyvtárak szinkronizálása">
 <!ENTITY zotero.preferences.sync.librariesToSync.button "Könyvtárak kiválasztása...">
 <!ENTITY zotero.preferences.sync.librariesToSync.sync "Szinkronizálás">

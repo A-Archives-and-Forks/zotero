@@ -77,11 +77,18 @@ preferences-advanced-custom-data-dir =
 preferences-advanced-default-data-dir =
     .value = (Default: { $directory })
     .aria-label = Posizione predefinita
+preferences-pane-account = Account
 -preferences-sync-data-syncing = Sincronizzazione dei dati
 preferences-sync-data-syncing-groupbox =
     .aria-label = { -preferences-sync-data-syncing }
 preferences-sync-data-syncing-heading = { -preferences-sync-data-syncing }
 preferences-sync-data-syncing-description = Accedi con il tuo account { -app-name } per sincronizzare i dati tra più dispositivi, collaborare con altre persone e molto di più.
+preferences-sync-settings-heading = Sync
+preferences-sync-settings-intro = { -app-name } can sync your library data and files across devices. <label data-l10n-name="sync-link">Learn more</label>
+preferences-sync-reset-heading = Sync Reset
+preferences-sync-fileSyncing-groups =
+    .label = Sync attachment files in group libraries using { -app-name } Storage
+preferences-sync-fileSyncing-tos = By using { -app-name } Storage, you agree to become bound by its <label data-l10n-name="terms-link">terms and conditions</label>.
 preferences-account-log-out =
     .label = Scollega l'account
 preferences-sync-reset-restore-to-server-body = { -app-name } sostituirà “{ $libraryName }” su { $domain } con i dati presenti su questo computer.

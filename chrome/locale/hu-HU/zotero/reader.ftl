@@ -102,7 +102,7 @@ reader-convert-to-highlight = Convert to Highlight
 reader-convert-to-underline = Convert to Underline
 reader-size = Méret
 reader-merge = Merge
-reader-copy-link = Copy Link
+reader-copy-link = Link másolása
 reader-theme-original = Original
 reader-theme-snow = Snow
 reader-theme-sepia = Sepia
@@ -223,7 +223,7 @@ reader-read-aloud-quota-exceeded-message =
     }.
 reader-read-aloud-error = { general-error }
 reader-read-aloud-error-unknown = Ismeretlen hiba.
-reader-read-aloud-error-connection = Unable to connect to the Read Aloud service. Please check your internet connection.
+reader-read-aloud-error-network = Unable to connect to the Read Aloud service. Please check your internet connection.
 reader-read-aloud-error-daily-limit-exceeded = You have exceeded your daily limit for { -app-name } Voices.
 reader-read-aloud-retry = Retry
 reader-read-aloud-first-run-title = Choose your preferred Read Aloud voice:

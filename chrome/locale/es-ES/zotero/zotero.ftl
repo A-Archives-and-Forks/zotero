@@ -796,3 +796,4 @@ banner-close-button =
     .aria-label = Descartar notificación
 plugins-blocked-plugin =
     .message = Este complemento ha sido desactivado por { -app-name }.
+data-dir-unsupported-storage = This can happen if the { -app-name } data directory is in a cloud storage folder (OneDrive, Dropbox, etc.) or on a network share.
