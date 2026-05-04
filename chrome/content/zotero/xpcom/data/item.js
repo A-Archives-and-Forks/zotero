@@ -444,6 +444,14 @@ Zotero.Item.prototype.setType = function (itemTypeID, loadIn) {
 			throw new Error('Cannot change type in loadIn mode');
 		}
 		
+		// Disallow changing between regular items, attachments, notes, and annotations
+		let oldName = Zotero.ItemTypes.getName(oldItemTypeID);
+		let newName = Zotero.ItemTypes.getName(itemTypeID);
+		let isSpecialType = name => name == 'attachment' || name == 'note' || name == 'annotation';
+		if (isSpecialType(oldName) || isSpecialType(newName)) {
+			throw new Error(`Cannot change item type from '${oldName}' to '${newName}'`);
+		}
+		
 		// Changing the item type can affect fields and creators, so they need to be loaded
 		this._requireData('itemData');
 		this._requireData('creators');

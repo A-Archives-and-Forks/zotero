@@ -291,7 +291,27 @@ describe("Zotero.Item", function () {
 			assert.strictEqual(item.getField('accessDate'), '');
 		})
 	})
-	
+
+	describe("#setType", function () {
+		it("should allow changing between regular item types", function () {
+			var item = new Zotero.Item('book');
+			item.setType(Zotero.ItemTypes.getID('journalArticle'));
+			assert.equal(item.itemTypeID, Zotero.ItemTypes.getID('journalArticle'));
+		});
+
+		it("should throw when converting a regular item to an attachment", function () {
+			var item = new Zotero.Item('book');
+			assert.throws(
+				() => item.setType(Zotero.ItemTypes.getID('attachment')),
+				/Cannot change item type from 'book' to 'attachment'/
+			);
+			assert.throws(
+				() => item.setField('itemTypeID', Zotero.ItemTypes.getID('attachment')),
+				/Cannot change item type from 'book' to 'attachment'/
+			);
+		});
+	})
+
 	describe("#dateAdded", function () {
 		it("should use current time if value was not given for a new item", async function () {
 			var item = new Zotero.Item('book');
