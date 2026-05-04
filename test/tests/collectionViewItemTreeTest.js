@@ -182,6 +182,28 @@ describe("CollectionViewItemTree", function () {
 			assert.equal(quicksearch.value, "test");
 		});
 
+		it("should expand parent item and attachment for an annotation match", async function () {
+			Zotero.Prefs.set("hideContextAnnotationRows", false);
+
+			let item = await createDataObject('item', { title: "Collapsed Parent" });
+			let attachment = await importFileAttachment('test.pdf', { title: 'PDF', parentItemID: item.id });
+			let annotation = await createAnnotation('highlight', attachment, { comment: "uniqueAnnotationTerm" });
+
+			itemsView.collapseAllRows();
+
+			await zp.itemsView.setFilter('search', "uniqueAnnotationTerm");
+
+			let itemRow = itemsView.getRowIndexByID(item.id);
+			assert.isNumber(itemRow);
+			assert.isTrue(itemsView.isContainerOpen(itemRow));
+
+			let attachmentRow = itemsView.getRowIndexByID(attachment.id);
+			assert.isNumber(attachmentRow);
+			assert.isTrue(itemsView.isContainerOpen(attachmentRow));
+
+			assert.isNumber(itemsView.getRowIndexByID(annotation.id));
+		});
+
 		it("should keep attachment rows collapsed unless search matches annotation text when hideContextAnnotationRows=true", async function () {
 			Zotero.Prefs.set("hideContextAnnotationRows", true);
 

@@ -336,7 +336,6 @@ class CollectionViewItemTreeRowProvider extends ItemTreeRowProvider {
 			return;
 		}
 
-		let rowsToOpen = [];
 		for (let i = 0; i < this.rowCount; i++) {
 			if (!this.isContainer(i) || this.isContainerOpen(i)) {
 				continue;
@@ -347,10 +346,10 @@ class CollectionViewItemTreeRowProvider extends ItemTreeRowProvider {
 			// OR if it has a child that is a parent of a match
 			let shouldBeOpened = searchParentIDs.has(item.id) || attachments.some(id => searchParentIDs.has(id));
 			if (shouldBeOpened) {
-				rowsToOpen.push(i);
+				this._toggleOpenState(i, true);
 			}
 		}
-		this._expandRows(rowsToOpen);
+		this.refreshRowMap();
 	}
 
 	expandMatchParents() {
